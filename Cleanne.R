@@ -9,9 +9,8 @@ iris
 
 #------------ vendo os tipos de dados
 str(df)
-sumary(df)
+summary("df")
 
-#acho q nesse caso summary n ta se aplicando..?
 
 #------------ chamando e selecionando o que eu quero no dataframe
 
@@ -41,7 +40,6 @@ p1=ggplot(iris, aes(x=Sepal.Length, y=Species))+
         axis.text = element_blank())
 p1
 
-#dando erro pq?
 
 
 #-------INVENTEI DE...
