@@ -5,12 +5,10 @@
 df <- iris
 iris
 
-#opçoes de view(df) tbm
-
 #------------ vendo os tipos de dados
+
 str(df)
 summary("df")
-
 
 #------------ chamando e selecionando o que eu quero no dataframe
 
@@ -31,15 +29,14 @@ ggplot(iris, aes(x=Sepal.Length, y=Species))+
 geom_point ()+
   theme(axis.title = element_text)
 
-#possivel salvar grafico como objeto, só identificar com nomenclatura conhecida, tipo P1
-#ex.: p1=ggplot2(iris, aes(x=Sepal.Length, y=Species)), dps so trazer o grafico chamando p1
+#possivel salvar grafico como objeto, só identificar com nome conhecido, tipo P1
+#ex.: p1=ggplot2(iris, aes(x=Sepal.Length, y=Species)) dps so trazer o grafico chamando p1
 
 p1=ggplot(iris, aes(x=Sepal.Length, y=Species))+ 
   geom_point ()+
   theme(axis.title = element_text(size = 22,face = "bold"),
         axis.text = element_blank())
 p1
-
 
 
 #-------INVENTEI DE...
@@ -55,26 +52,85 @@ temperature <- c(40.5, 42.7, 58.0, 63.0, 40.2)
 
 #--------- cauclando a média da temp
 
-mean(temperature) 
+mean(temperature)
 #valor de 48.88
 
 #--------- tentei criar o dataframe
 
 falcon <- data.frame(tempo, temperature)
+falcon
 
 #DUVIDA: tem como remover o vetor do environment?
 
+
+
 #---------- descobrindo um gráfico de barras
-install.packages("barplot")
 
-barplot(falcon$temperature ~ falcon$tempo, col <- "blue",
-        ylab = "temperature ºC", xlab = "fator em horas",
-        main = "aferição da temperatura dos sistemas nanohíbridos")
+#--------modificaçao 1
 
+head(falcon)
+str(falcon)
 
-ggplot(falcon, aes(x=temperature, y=tempo)) +
-  geom_bar()+
+ggplot(falcon) +
+  geom_col(aes(x=tempo, y=temperature)) +
   theme(axis.title = element_text(size = 15,face = "bold"),
         axis.text = element_blank())
 
+#---------modificação 2 - THEMES
+
+#A
+ggplot(falcon) +
+  geom_col(aes(x=tempo, y=temperature)) +
+  theme(panel.background = element_rect(fill  = "white"),
+        panel.grid = element_line(colour='black'))
+#B
+ggplot(falcon) +
+  geom_col(aes(x=tempo, y=temperature)) +
+  theme(axis.title = element_text(size = 15,face = "bold"),
+        axis.text = element_blank()) +
+  theme(panel.background = element_rect(fill  = "pink"),
+        panel.grid = element_line(colour='blue')) 
+
+#C - pintando as colunas
+
+ggplot(falcon) +
+  geom_col(aes(x=tempo, y=temperature)) + 
+  theme(axis.title = element_text(size = 15,face = "bold"),
+        axis.text = element_blank()) +
+  theme(panel.background = element_rect(fill  = "pink"),
+        panel.grid = element_line(colour='blue'))
+
+c1=ggplot(falcon) +
+  geom_col(aes(x=tempo, y=temperature)) + 
+  theme(axis.title = element_text(size = 15,face = "bold"),
+        axis.text = element_blank()) +
+  theme(panel.background = element_rect(fill  = "pink"),
+        panel.grid = element_line(colour='blue'))
+c1
+
+ggplot(falcon) +
+  geom_col(aes(x=tempo, y=temperature)) + 
+  scale_color_manual( values = c('red', 'yellow', 'green')) + 
+  theme(axis.title = element_text(size = 15,face = "bold"),
+      axis.text = element_blank()) +
+  theme(panel.background = element_rect(fill  = "pink"),
+        panel.grid = element_line(colour='blue'))
+
+#oq eu fiz de errado acima? a ideia era colorir as colunas..
+#e se eu criasse uma nova coluna pra predizer as cores, chamar ela dentro da aes
+
+
+
+
+#------------
+
+
+#------------------
+
 #-------chamando funções: df+ as.dataframe(expres(xxxxx))
+  #-------- geom_bar para barras, medida de frequencia
+
+# --------- desenvolvendo themes
+
+
+  
