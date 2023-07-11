@@ -38,7 +38,6 @@ p1=ggplot(iris, aes(x=Sepal.Length, y=Species))+
         axis.text = element_blank())
 p1
 
-
 #-------INVENTEI DE...
 install.packages("barplot")
 
