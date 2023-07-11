@@ -11,3 +11,9 @@ Giovani
 Cleanne
 
 Elis
+
+#GitHub Installer and Binding 🐜🐝🐞
+
+[https://youtu.be/mmcOw2ynWEs](url)
+
+[https://youtu.be/cnqAC9epNfA](url)
