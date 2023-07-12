@@ -1,4 +1,4 @@
-#class 11.08 - feito em casa
+#class 11.08 
 
 #---------------selecionando e executando o data frame
 
@@ -88,7 +88,7 @@ ggplot(falcon) +
   theme(axis.title = element_text(size = 15,face = "bold"),
         axis.text = element_blank()) +
   theme(panel.background = element_rect(fill  = "pink"),
-        panel.grid = element_line(colour='blue')) 
+        panel.grid = element_line(colour='blue'))
 
 #C - pintando as colunas
 
@@ -98,6 +98,8 @@ ggplot(falcon) +
         axis.text = element_blank()) +
   theme(panel.background = element_rect(fill  = "pink"),
         panel.grid = element_line(colour='blue'))
+
+#D - criei em objeto prafacilitar 
 
 c1=ggplot(falcon) +
   geom_col(aes(x=tempo, y=temperature)) + 
@@ -119,7 +121,47 @@ ggplot(falcon) +
 #e se eu criasse uma nova coluna pra predizer as cores, chamar ela dentro da aes
 
 
+#E
 
+c1 + theme(plot.background = element_rect(fill = "green"))
+
+#F - mexendo na 'caixa do elemento'
+
+c1 + theme(panel.background = element_rect(fill = "white", colour = "grey50"))
+
+c1 + theme(panel.border = element_rect(linetype = "dashed", fill = NA))
+
+#G - nomei um novo obejto com titulo
+
+c2 <- ggplot(falcon, aes(tempo, temperature)) +
+  geom_point() +
+  labs(title = "Tempo de decaimento dos sistemas nanohibridos")
+
+c2
+
+c2 + theme(plot.title = element_text(size = rel(2)))
+
+c2 + theme(plot.title = element_text(size = rel(2), colour = "green"))
+
+#H - mundando as escalas
+
+c2 + theme(axis.text = element_text(colour = "red"))
+
+c2 + theme(axis.title = element_text(size = 8, colour = "yellow"))
+
+#como coloca o titulo no centro?
+
+#I - strips
+
+c3 <- ggplot(falcon, aes(tempo, temperature)) +
+  geom_point() +
+  facet_wrap(aes(class)) 
+c3
+
+#ideia de tiras, porém acho q precisa de mais dados..
+
+
+#como coloca legenda? e como muda a bolinha p outra forma geometrica?
 
 #------------
 
@@ -129,7 +171,6 @@ ggplot(falcon) +
 #-------chamando funções: df+ as.dataframe(expres(xxxxx))
   #-------- geom_bar para barras, medida de frequencia
 
-# --------- desenvolvendo themes
 
 
   
