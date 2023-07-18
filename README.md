@@ -1,5 +1,7 @@
 # BIC2023 :computer: :globe_with_meridians:
 
+![Texto Alternativo da Imagem](caminho/para/imagem.jpg)
+
 Repo for BioInfo Class 2023 PPgCF
 
 ## Students
@@ -21,32 +23,32 @@ Felipe
 [https://youtu.be/cnqAC9epNfA](url)
 
 
-#1º Parte Revisão :shipit:
+# 1º Parte Revisão :shipit:
 
-##DIVISÃO
+## DIVISÃO
 
 9/2
 
-##MULTIPLICAÇÃO
+## MULTIPLICAÇÃO
 
 4 * 2
 
-##POTENCIAÇÃO
+## POTENCIAÇÃO
 
 4 ** 2
 4 ^ 2
 
-##IGUAL?
+## IGUAL?
 
  44 == 4
  4  == 4
 
-##DIFERENTE?
+## DIFERENTE?
  
 5 != 5 
 5 != 6
 
-##MAIOR? MENOR?
+## MAIOR? MENOR?
 
 5 > 2
 5 > 6
@@ -54,7 +56,7 @@ Felipe
 5 < 2
 6 < 7
 
-##MAIOR OU IGUAL? MENOR OU IGUAL?
+## MAIOR OU IGUAL? MENOR OU IGUAL?
 
 4 >= 5
 4 >= 4
@@ -62,14 +64,14 @@ Felipe
 6 <= 8
 6 <= 5
 
-##E
+## E
 
 6 == 6
 6 == 6 & 9 == 8
 7 == 7 & 7 != 8
 5 > 3 &  2 < 3
 
-##OU
+## OU
 
 7 == 7
 7 == 8 
@@ -78,16 +80,16 @@ Felipe
 6 != 8 | 7 == 8
 5 > 3 | 5 < 8
 !
-##NEGAÇÃO
+## NEGAÇÃO
 
 !6 == 6
 !4 > 2
 
 
 
-#2º  PARTE
+# 2º  PARTE
 
-##ARMAZENANDO DADOS NUMERICOS
+## ARMAZENANDO DADOS NUMERICOS
 
 salario <- 3450.89
 horas <- "220"
@@ -103,7 +105,7 @@ numeros1
 numeros2 <- c(salario,horas)
 numeros2
 
-##ARMAZENANDO CARACTERES
+## ARMAZENANDO CARACTERES
 
 nome_1 <- "Eduardo Silva"
 nome_2 <- "Eduardo Silva"
@@ -120,7 +122,7 @@ nomes[2]
 
 nome_1 == nome_2
 
-##ARMAZENAMENTO DE FATORES
+## ARMAZENAMENTO DE FATORES
 
 cargahoraria <- c(220,220,110,110,90)
 summary(cargahoraria)
@@ -130,7 +132,7 @@ summary(cargahoraria)
 mode(cargahoraria)
 class(cargahoraria)
 
-##ARMAZENAMENTO LOGICO
+## ARMAZENAMENTO LOGICO
 
 L1 <- salario > horas
 L1
@@ -144,12 +146,12 @@ logico2 <- c(1,TRUE,FALSE,3)
 logico2
 
 
-##ESTRUTURA BÁSICA PARA DATAFRAMES = VETORES
+## ESTRUTURA BÁSICA PARA DATAFRAMES = VETORES
 
 is.vector()
 mode(cargahoraria)
 
-##LISTA - VETORES COM DIFERENTES DADOS
+## LISTA - VETORES COM DIFERENTES DADOS
 
 a <- c(1,2,3,4)
 b <- c(1,"2",3,4)  #c(1,"a",3,4)
@@ -172,7 +174,7 @@ e <- list(c(10,6,51,5),"2",8)
 str(e)
 e[[1]][1]
 
-##MATRIZES - DUAS DIMENSOES
+## MATRIZES - DUAS DIMENSOES
 
 m <- matrix(1:9, nrow = 3)
 m
@@ -187,21 +189,21 @@ mode(m)
 m
 class(m)
 
-#TRABALHANDO COM BASE DE DADOS: 
-##EXCEL(XLSX,XLS), TEXTO(TXT), CSV...
+# TRABALHANDO COM BASE DE DADOS: 
+## EXCEL(XLSX,XLS), TEXTO(TXT), CSV...
 
-##DEFININDO AREA DE TRABALHO
+### DEFININDO AREA DE TRABALHO
 getwd()
 setwd()
 
-##IMPORTANDO
+## IMPORTANDO
 df <- read.csv()
 
 View(df)
 str(df)
 summary()
 
-##SELECIONANDO
+## SELECIONANDO
 df
 head()
 tail()
@@ -220,14 +222,14 @@ class(col2)
 
 df$ <- NULL
 
-##ALTERANDO O TIPO DA VARIAVEL
+## ALTERANDO O TIPO DA VARIAVEL
 df$
 summary(df$)
 df$UPS <- as.factor(df$UPS)
 df$UPS
 summary(df$)
 
-##CRIANDO UMA NOVA VARIAVEL
+## CRIANDO UMA NOVA VARIAVEL
 df$nova <- "a"
 class(df$nova)
 df$nova <- c(2,5,10)
