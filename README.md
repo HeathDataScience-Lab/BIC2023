@@ -1,6 +1,6 @@
 # BIC2023 :computer: :globe_with_meridians:
 
-![Texto Alternativo da Imagem](caminho/para/imagem.jpg)
+![Programming](C:\Users\User\Downloads.jpg)
 
 Repo for BioInfo Class 2023 PPgCF
 
