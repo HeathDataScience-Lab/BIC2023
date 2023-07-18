@@ -1,6 +1,6 @@
 # BIC2023 :computer: :globe_with_meridians:
 
-![Programming](C:\Users\User\Downloads.jpg)
+![Blue Modern Computer Programming Technology Ebook Cover (Post para Instagram (Quadrado))](https://github.com/HeathDataScience-Lab/BIC2023/assets/127351953/fff16cb1-d543-4ec4-8269-318eab1b7a29)
 
 Repo for BioInfo Class 2023 PPgCF
 
