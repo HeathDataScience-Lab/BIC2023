@@ -33,15 +33,15 @@ Felipe
 
 4 * 2
 
-## POTENCIAÇÃO
+POTENCIAÇÃO
 
-4 ** 2
-4 ^ 2
+- 4 ** 2
+- 4 ^ 2
 
 ## IGUAL?
 
- 44 == 4
- 4  == 4
+ - 44 == 4
+ - 4  == 4
 
 ## DIFERENTE?
  
