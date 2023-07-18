@@ -23,7 +23,7 @@ Felipe
 [https://youtu.be/cnqAC9epNfA](url)
 
 
-# 1º Parte Revisão :shipit:
+# 1º Parte Revisão :shipit:shipit:shipit:
 
 ## DIVISÃO
 
