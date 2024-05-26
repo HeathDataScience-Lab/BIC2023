@@ -14,8 +14,9 @@ EmpSal <- read.csv('top50_atv_and_correspondente_ros.csv',
 head(EmpSal)
 
 #new plot
-p1=ggplot(EmpSal, aes(x=log2FC_ATV, y=pvalue_ATV))+
+p1  =  ggplot(EmpSal, aes(x=log2FC_ATV, y=pvalue_ATV))+  
   geom_point()+
+  stat_smooth( method = "lm", span = 0.8, se = F)+  #ADD LINE OF VARIANCE
   theme(axis.title = element_text(size = 22,face = "bold"),
         axis.text = element_blank())
 p1
